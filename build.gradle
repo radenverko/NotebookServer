@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'NotebookServer'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 10
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.1.6.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.6.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.1.6.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '2.1.6.RELEASE'
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-mail', version: '2.1.6.RELEASE'
+	testCompile group: 'com.h2database', name: 'h2', version: '1.4.199'
+    
+
+	
+    
+}
